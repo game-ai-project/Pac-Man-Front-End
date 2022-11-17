@@ -1,5 +1,4 @@
 import React, { Component }  from 'react';
-import ToggleSwitchButton from './ToggleSwitchButton';
 import twitch_view from './Twitch_view.png';
 import './App.css';
 
@@ -21,7 +20,11 @@ function App() {
 		    <div className="Audio-settings">
 		      <div className="Audio-space" />
 		      <div className="Audio-title"><b>Audio settings</b></div>
-		      <ToggleSwitchButton />
+		      <div className="toggleButton">
+            <input id="toggle" type="checkbox" />
+	
+            <label htmlFor="toggle" />
+          </div>
 		    </div>
 		    <div className="Action-log" />
 		    <div className="Record" />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component }  from 'react';
 import styled from 'styled-components'
 
 const StyledToggleSwitchButton = styled.div`
@@ -41,7 +41,7 @@ const StyledToggleSwitchButton = styled.div`
 
 const ToggleSwitchButton = ({ className, handleChange }) => (
 	<div className={className}>
-		<input id="btn-mode" type="checkbox" onChange={handleChange} />
+		<input id="btn-mode" type="checkbox" onChange={handleChange} ref={this.myRef} />
 		<label htmlFor="btn-mode">
     </label>
 	</div>
