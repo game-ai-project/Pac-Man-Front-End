@@ -34,7 +34,10 @@ function App() {
 		        <div>100</div>
 		      </div>
 		    </div>
-		    <div className="Action-log" />
+		    <div className="Action-log">
+		      <div className="Action-log-space" />
+		      <div className="Action-log-title"><b>Action log</b></div>
+		    </div>
 		    <div className="Record" />
 		  </div>
     </div>
