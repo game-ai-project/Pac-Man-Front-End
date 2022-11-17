@@ -12,10 +12,10 @@
 	justify-content: center;
   line-height: 100px;
   margin: 20px;
-  width: 100px;
+  width: 50%;
 }
 
-.Grid.Twitch-view {
+.Twitch-view {
 	background-color: #0FFFFF;
   height: 100%;
 	width: 60%;
