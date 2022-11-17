@@ -6,11 +6,9 @@
 }
 
 .Grid {
-  color: #fff;
-  font-weight: bold;
+  background-color: #030303;
   text-align: center;
   line-height: 100px;
-  background-color: #3CB371;
   margin: 20px;
   width: 100px;
 }
