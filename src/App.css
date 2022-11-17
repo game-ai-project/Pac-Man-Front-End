@@ -6,23 +6,28 @@
 }
 
 .Grid {
-  background-color: #030303;
+}
+
+.Twitch-view {
+	background-color: #0FFFFF;
   text-align: center;
   align-items: center;
 	justify-content: center;
   line-height: 100px;
   margin: 20px;
-  width: 50%;
-}
-
-.Twitch-view {
-	background-color: #0FFFFF;
   height: 100%;
-	width: 60%;
+	width: 100px;
 }
 
 .Instruction {
-	background-color: #FFFFFF;
+	background-color: #F0FFFF;
+  text-align: center;
+  align-items: center;
+	justify-content: center;
+  line-height: 100px;
+  margin: 20px;
+  height: 100%;
+	width: 100px;
 }
 
 
