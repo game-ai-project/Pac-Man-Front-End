@@ -8,6 +8,8 @@
 .Grid {
   background-color: #030303;
   text-align: center;
+  align-items: center;
+	justify-content: center;
   line-height: 100px;
   margin: 20px;
   width: 100px;
