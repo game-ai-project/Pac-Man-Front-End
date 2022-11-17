@@ -211,3 +211,7 @@ input[type="range"] {
   border-radius: 10px;
   border: solid 3px #5657F6;
 }
+
+li {
+	color: #5657F6;
+}
