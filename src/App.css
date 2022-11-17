@@ -45,6 +45,13 @@
 	text-align: left;
 }
 
+.Instruction-content {
+  background-color: #030303;
+	height: 70%;
+	color: #5657F6;
+	text-align: left;
+}
+
 .Audio-settings {
 	background-color: #0000FF;
   height: 30%;

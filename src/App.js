@@ -11,7 +11,7 @@ function App() {
 		  <div className="User-interface">
 		    <div className="Instruction">
 		      <div className="Instruction-title">Instruction</div>
-		      <div>The game will be automatically played by Al.
+		      <div className="Instruction-content">The game will be automatically played by Al.
 By cheering/boo with your own voice, you can give advantages/disadvantages to Ms PAC-MAN
 Press the "Record" button and cheer/ooo with your passionate voicel</div>
 		    </div>
