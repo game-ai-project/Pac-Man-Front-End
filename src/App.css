@@ -94,6 +94,11 @@
 	justify-content: center;
 }
 
+.Audio-items {
+	display: flex;
+	height: 20%;
+}
+
 .Action-log {
 	background-color: #00000F;
   height: 30%;

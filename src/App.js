@@ -20,10 +20,13 @@ function App() {
 		    <div className="Audio-settings">
 		      <div className="Audio-space" />
 		      <div className="Audio-title"><b>Audio settings</b></div>
-		      <div class="toggle_button">
-            <input id="toggle" class="toggle_input" type='checkbox' />
-            <label for="toggle" class="toggle_label"/>
-          </div>
+		      <div className="Audio-items">
+		        <div class="toggle_button">
+              <input id="toggle" class="toggle_input" type='checkbox' />
+              <label for="toggle" class="toggle_label"/>
+            </div>
+		        <div className="Audio-1">Turn on/off background music</div>
+		      </div>
 		    </div>
 		    <div className="Action-log" />
 		    <div className="Record" />

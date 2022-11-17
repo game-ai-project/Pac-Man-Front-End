@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Pac-Man-Front-End/precache-manifest.cb1642329cbb2cdf7212a9111873ff67.js"
+  "/Pac-Man-Front-End/precache-manifest.080bb6db568f2de12117114f2b31b692.js"
 );
 
 workbox.clientsClaim();
