@@ -6,7 +6,7 @@ function App() {
     <div className="App">
 		  <div className="Twitch-view" />
 		  
-		  <div className="Grid" />
+		  <div className="User-interface" />
     </div>
   );
 }
