@@ -8,7 +8,9 @@ function App() {
 		    <img src={twitch_view} className="Pac-Man" />
 		  </div>
 		  
-		  <div className="User-interface" />
+		  <div className="User-interface">
+		    <div className="Instruction" />
+		  </div>
     </div>
   );
 }
