@@ -2,6 +2,9 @@
   text-align: left;
 	height: 100vmin;
 	background-color: #030303;
+	flex: 1;
+  width: '100%';
+  flexDirection: 'row';
 }
 
 .View-twitch {
