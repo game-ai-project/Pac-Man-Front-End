@@ -4,11 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-		  <div className="Twitch-view">
-		    <div className="Pac-man" />
+		  <div className="Grid">
+		    <div className="Twitch-view" />
 		  </div>
 		  
-		  <div className="Control-panel">
+		  <div className="Grid">
 		    <div className="Instruction" />
 		    <div className="Audio-settings" />
 		    <div className="Action-log" />

@@ -5,20 +5,14 @@
 	height: 100vmin;
 }
 
+.Grid {
+
+}
+
 .Twitch-view {
 	background-color: #0FFFFF;
   height: 100%;
 	width: 60%;
-}
-
-.Pac-man {
-	background-color: #F0FFFF;
-  height: 90%;
-	padding: 10px;
-}
-
-.Control-panel {
-	background-color: #FFFFFF;
 }
 
 .Instruction {
