@@ -34,18 +34,27 @@
 	background-color: #030303;
   height: 30%;
 	color: #5657F6;
+  text-align: center;
 }
 
 .Instruction-title {
+  background-color: #030303;
+	height: 20%;
+	color: #5657F6;
+	text-align: left;
+	justify-content: center;
+}
+
+.Instruction-1 {
   background-color: #030303;
 	height: 30%;
 	color: #5657F6;
 	text-align: left;
 }
 
-.Instruction-1 {
+.Instruction-space {
   background-color: #030303;
-	height: 30%;
+	height: 20%;
 	color: #5657F6;
 	text-align: left;
 }
