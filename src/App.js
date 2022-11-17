@@ -21,7 +21,7 @@ function App() {
 		      <div className="Audio-space" />
 		      <div className="Audio-title"><b>Audio settings</b></div>
 		      <div className="Audio-items">
-		        <div class="toggle_button">
+		        <div className="toggle_button">
               <input id="toggle" class="toggle_input" type='checkbox' />
               <label for="toggle" class="toggle_label"/>
             </div>
