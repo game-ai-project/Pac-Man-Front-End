@@ -10,6 +10,10 @@
 	background-color: #00FFFF;
 }
 
+.Pac-man-on-twitch {
+  height: 75%;
+}
+
 .Control-panel {
   height: 25%;
   pointer-events: none;
