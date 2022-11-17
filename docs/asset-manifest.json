@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Pac-Man-Front-End/static/css/main.f74e05e7.css",
-    "main.js": "/Pac-Man-Front-End/static/js/main.48f978fc.js",
+    "main.js": "/Pac-Man-Front-End/static/js/main.8193be2c.js",
     "static/js/787.b94a327f.chunk.js": "/Pac-Man-Front-End/static/js/787.b94a327f.chunk.js",
     "static/media/Twitch_view.png": "/Pac-Man-Front-End/static/media/Twitch_view.f16de9624891db52f30d.png",
     "index.html": "/Pac-Man-Front-End/index.html",
     "main.f74e05e7.css.map": "/Pac-Man-Front-End/static/css/main.f74e05e7.css.map",
-    "main.48f978fc.js.map": "/Pac-Man-Front-End/static/js/main.48f978fc.js.map",
+    "main.8193be2c.js.map": "/Pac-Man-Front-End/static/js/main.8193be2c.js.map",
     "787.b94a327f.chunk.js.map": "/Pac-Man-Front-End/static/js/787.b94a327f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f74e05e7.css",
-    "static/js/main.48f978fc.js"
+    "static/js/main.8193be2c.js"
   ]
 }
