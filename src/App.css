@@ -2,7 +2,6 @@
   text-align: left;
 	height: 100vmin;
 	background-color: #030303;
-	display: inline;
   flex-direction: column;
 }
 
@@ -10,7 +9,6 @@
   height: 75%;
   pointer-events: none;
 	background-color: #00FFFF;
-	display: inline;
 }
 
 .Pac-man-on-twitch {
