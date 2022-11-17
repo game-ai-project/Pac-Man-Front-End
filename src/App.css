@@ -34,20 +34,20 @@
 
 .Instruction {
 	background-color: #000FFF;
-  height: 20%;
+  height: 30%;
 }
 
 .Audio-settings {
 	background-color: #0000FF;
-  height: 20%;
+  height: 30%;
 }
 
 .Action-log {
 	background-color: #00000F;
-  height: 20%;
+  height: 30%;
 }
 
 .Record {
 	background-color: #000000;
-  height: 20%;
+  height: 10%;
 }
