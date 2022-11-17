@@ -20,10 +20,9 @@ function App() {
 		    <div className="Audio-settings">
 		      <div className="Audio-space" />
 		      <div className="Audio-title"><b>Audio settings</b></div>
-		      <div className="toggleButton">
-            <input id="toggle" type="checkbox" />
-	
-            <label htmlFor="toggle" />
+		      <div class="toggle_button">
+            <input id="toggle" class="toggle_input" type='checkbox' />
+            <label for="toggle" class="toggle_label"/>
           </div>
 		    </div>
 		    <div className="Action-log" />
