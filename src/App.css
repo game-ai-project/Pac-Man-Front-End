@@ -214,6 +214,8 @@ input[type="range"] {
 
 li {
 	color: #5657F6;
+  text-align: left;
+	list-style: none;
 }
 
 .rounded-corner {
