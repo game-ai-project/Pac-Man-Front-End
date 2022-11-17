@@ -4,6 +4,7 @@
 }
 
 .View-of-Twitch {
+	text-align: left;
   height: 75vmin;
   pointer-events: none;
 }
