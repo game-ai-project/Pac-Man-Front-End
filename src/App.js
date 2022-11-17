@@ -37,6 +37,11 @@ function App() {
 		    <div className="Action-log">
 		      <div className="Action-log-space" />
 		      <div className="Action-log-title"><b>Action log</b></div>
+		      <ol>
+            <li>データ1</li>
+            <li>データ2</li>
+            <li>データ3</li>
+          </ol>
 		    </div>
 		    <div className="Record" />
 		  </div>
