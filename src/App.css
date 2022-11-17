@@ -1,23 +1,24 @@
 .App {
+	background-color: #030303;
   text-align: left;
 	height: 100vmin;
-	background-color: #030303;
 }
 
 .Twitch-view {
+	background-color: #0FFFFF;
   height: 100%;
 	width: 60%;
-	background-color: #0FFFFF;
 }
 
 .Pac-man {
-  height: 95%;
 	background-color: #F0FFFF;
+  height: 100%;
+	padding: 10px;
 }
 
 .Control-panel {
-  height: 25%;
 	background-color: #FFFFFF;
+  height: 25%;
 }
 
 .Instruction {

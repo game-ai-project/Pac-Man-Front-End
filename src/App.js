@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
 		  <div className="Twitch-view">
-		    <div className="Pac-man"/>
+		    <div className="Pac-man" />
 		  </div>
 		  
 		  <div className="Control-panel">
