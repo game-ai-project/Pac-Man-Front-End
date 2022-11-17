@@ -9,7 +9,6 @@
 
 .Twitch-view {
 	background-color: #0FFFFF;
-  text-align: center;
   align-items: center;
 	justify-content: center;
   line-height: 100px;
@@ -30,8 +29,5 @@
 }
 
 .Pac-Man {
-  width: 100%;
-  text-align: center;
-  align-items: center;
-	justify-content: center;
+  height: 100%;
 }
