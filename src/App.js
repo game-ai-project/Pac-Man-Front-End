@@ -12,12 +12,13 @@ function App() {
 		    <div className="Instruction">
 		      <div className="Instruction-space" />
 		      <div className="Instruction-title"><b>Instruction</b></div>
-		      <div className="Instruction-1">The game will be automatically played by Al.
-By cheering/boo with your own voice, you can give advantages/disadvantages to Ms PAC-MAN</div>
+		      <div className="Instruction-1">The game will be automatically played by Al.By cheering/boo with your own voice, you can give advantages/disadvantages to Ms PAC-MAN</div>
 		      <div className="Instruction-space" />
 		      <div className="Instruction-2">Press the <b>"Record"</b> button and cheer/ooo with your passionate voicel</div>
 		    </div>
 		    <div className="Audio-settings" />
+		      <div className="Audio-space" />
+		      <div className="Audio-title"><b>Audio settings</b></div>
 		    <div className="Action-log" />
 		    <div className="Record" />
 		  </div>
