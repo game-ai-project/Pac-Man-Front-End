@@ -37,7 +37,7 @@
 .Instruction {
 	background-color: #030303;
   height: 30%;
-	color: #5657F6;
+	color: #FFFFFF;
   text-align: center;
 }
 
@@ -45,7 +45,7 @@
   background-color: #030303;
 	font-size: 30px;
 	height: 20%;
-	color: #5657F6;
+	color: #FFFFFF;
 	text-align: left;
 	justify-content: center;
 }
@@ -53,35 +53,35 @@
 .Instruction-1 {
   background-color: #030303;
 	height: 30%;
-	color: #5657F6;
+	color: #FFFFFF;
 	text-align: left;
 }
 
 .Instruction-space {
   background-color: #030303;
 	height: 10%;
-	color: #5657F6;
+	color: #FFFFFF;
 	text-align: left;
 }
 
 .Instruction-2 {
   background-color: #030303;
 	height: 30%;
-	color: #5657F6;
+	color: #FFFFFF;
 	text-align: left;
 }
 
 .Audio-settings {
 	background-color: #030303;
   height: 30%;
-	color: #5657F6;
+	color: #FFFFFF;
   text-align: center;
 }
 
 .Audio-space {
   background-color: #030303;
   height: 10%;
-  color: #5657F6;
+	color: #FFFFFF;
   text-align: left;
 }
 
@@ -89,7 +89,7 @@
   background-color: #030303;
 	font-size: 30px;
 	height: 20%;
-	color: #5657F6;
+	color: #FFFFFF;
 	text-align: left;
 	justify-content: center;
 }
@@ -130,7 +130,7 @@
 .Action-log-space {
   background-color: #030303;
   height: 10%;
-  color: #5657F6;
+	color: #FFFFFF;
   text-align: left;
 }
 
@@ -138,7 +138,7 @@
   background-color: #030303;
 	font-size: 30px;
 	height: 20%;
-	color: #5657F6;
+	color: #FFFFFF;
 	text-align: left;
 	justify-content: center;
 }
@@ -213,7 +213,7 @@ input[type="range"] {
 }
 
 li {
-	color: #5657F6;
+	color: #FFFFFF;
   text-align: left;
 	list-style: none;
 }
