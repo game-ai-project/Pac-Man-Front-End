@@ -37,11 +37,11 @@ function App() {
 		    <div className="Action-log">
 		      <div className="Action-log-space" />
 		      <div className="Action-log-title"><b>Action log</b></div>
-		      <ol>
+		      <ul>
             <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
             <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
             <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
-          </ol>
+          </ul>
 		    </div>
 		    <div className="Record" />
 		  </div>
