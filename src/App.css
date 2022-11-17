@@ -12,8 +12,8 @@
 	justify-content: center;
   line-height: 100px;
   margin: 20px;
-  height: 100%;
 	width: 100px;
+	flex: 3;
 }
 
 .User-interface {
@@ -23,6 +23,6 @@
 	justify-content: center;
   line-height: 100px;
   margin: 20px;
-  height: 100%;
 	width: 100px;
+	flex: 1;
 }
