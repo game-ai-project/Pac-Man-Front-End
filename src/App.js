@@ -9,7 +9,9 @@ function App() {
 		  </div>
 		  
 		  <div className="User-interface">
-		    <div className="Instruction" />
+		    <div className="Instruction">
+		      <p>Instruction</p>
+		    </div>
 		    <div className="Audio-settings" />
 		    <div className="Action-log" />
 		    <div className="Record" />
