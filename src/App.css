@@ -4,8 +4,8 @@
 	background-color: #030303;
 }
 
-.View-of-Twitch {
-  height: 75vmin;
+.View-twitch {
+  width: 75vmin;
   pointer-events: none;
 	display: -webkit-flex;
   display: -moz-flex;
@@ -15,10 +15,18 @@
 	flexDirection: 'row';
 }
 
-.Instruction {
-  height: 35vmin;
+.Control-panel {
+  width: 25vmin;
+  pointer-events: none;
+	display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+	flexDirection: 'row';
 	background-color: #FFFFFF;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

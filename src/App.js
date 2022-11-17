@@ -4,14 +4,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-		  <div className="View-Twitch">
-		    <img src={twitch_view} className="Pac-Man-on-Twitch" alt="temporaly" />
+		  <div className="View-twitch">
+		    <img src={twitch_view} className="Pac-man-on-twitch"/>
 		  </div>
 		  
-		  <div className="Instruction" />
-		  <div className="Audio-settings" />
-		  <div className="Action-log" />
-		  <div className="Record" />
+		  <div className="Control-panel">
+		    <div className="Instruction" />
+		    <div className="Audio-settings" />
+		    <div className="Action-log" />
+		    <div className="Record" />
+		  </div>
     </div>
   );
 }
