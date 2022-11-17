@@ -1,7 +1,7 @@
 {
-  "main.css": "/Pac-Man-Front-End/static/css/main.984ef0f9.chunk.css",
-  "main.js": "/Pac-Man-Front-End/static/js/main.50abbdc5.chunk.js",
-  "main.js.map": "/Pac-Man-Front-End/static/js/main.50abbdc5.chunk.js.map",
+  "main.css": "/Pac-Man-Front-End/static/css/main.8cff761d.chunk.css",
+  "main.js": "/Pac-Man-Front-End/static/js/main.383aeea3.chunk.js",
+  "main.js.map": "/Pac-Man-Front-End/static/js/main.383aeea3.chunk.js.map",
   "static/js/1.95ea83b6.chunk.js": "/Pac-Man-Front-End/static/js/1.95ea83b6.chunk.js",
   "static/js/1.95ea83b6.chunk.js.map": "/Pac-Man-Front-End/static/js/1.95ea83b6.chunk.js.map",
   "static/js/2.fe9e49dc.chunk.js": "/Pac-Man-Front-End/static/js/2.fe9e49dc.chunk.js",
@@ -9,8 +9,8 @@
   "runtime~main.js": "/Pac-Man-Front-End/static/js/runtime~main.9eae7e77.js",
   "runtime~main.js.map": "/Pac-Man-Front-End/static/js/runtime~main.9eae7e77.js.map",
   "static/media/Twitch_view.png": "/Pac-Man-Front-End/static/media/Twitch_view.43ff8e8f.png",
-  "static/css/main.984ef0f9.chunk.css.map": "/Pac-Man-Front-End/static/css/main.984ef0f9.chunk.css.map",
+  "static/css/main.8cff761d.chunk.css.map": "/Pac-Man-Front-End/static/css/main.8cff761d.chunk.css.map",
   "index.html": "/Pac-Man-Front-End/index.html",
-  "precache-manifest.494613757c36fb6e4519f85a70ad6af9.js": "/Pac-Man-Front-End/precache-manifest.494613757c36fb6e4519f85a70ad6af9.js",
+  "precache-manifest.cb1642329cbb2cdf7212a9111873ff67.js": "/Pac-Man-Front-End/precache-manifest.cb1642329cbb2cdf7212a9111873ff67.js",
   "service-worker.js": "/Pac-Man-Front-End/service-worker.js"
 }

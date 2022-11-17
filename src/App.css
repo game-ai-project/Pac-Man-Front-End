@@ -121,7 +121,7 @@
   background: #ccc;
   position: relative;
   display: inline-block;
-  border-radius: 40px;
+  border-radius: 30px;
   transition: 0.4s;
   box-sizing: border-box;
 }
