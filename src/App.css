@@ -7,6 +7,11 @@
 .View-of-Twitch {
   height: 75vmin;
   pointer-events: none;
+	display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 
 .Instruction {
