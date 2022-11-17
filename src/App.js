@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import twitch_view from './Twitch_view.png';
 import './App.css';
 
