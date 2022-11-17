@@ -33,9 +33,16 @@
 }
 
 .Instruction {
-	background-color: #000FFF;
+	background-color: #030303;
   height: 30%;
-	color: #5657F6
+	color: #5657F6;
+}
+
+.Instruction-title {
+  background-color: #030303;
+	height: 30%;
+	color: #5657F6;
+	text-align: left;
 }
 
 .Audio-settings {
