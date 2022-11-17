@@ -10,6 +10,9 @@ function App() {
 		  
 		  <div className="User-interface">
 		    <div className="Instruction" />
+		    <div className="Audio-settings" />
+		    <div className="Action-log" />
+		    <div className="Record" />
 		  </div>
     </div>
   );

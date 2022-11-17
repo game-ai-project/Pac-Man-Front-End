@@ -33,5 +33,21 @@
 }
 
 .Instruction {
+	background-color: #000FFF;
+  height: 20%;
+}
+
+.Audio-settings {
+	background-color: #0000FF;
+  height: 20%;
+}
+
+.Action-log {
+	background-color: #00000F;
+  height: 20%;
+}
+
+.Record {
+	background-color: #000000;
   height: 20%;
 }
