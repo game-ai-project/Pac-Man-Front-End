@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-	height: 100%;
+	height: 100px;
 	background-color: #030303;
 }
 
@@ -17,11 +17,11 @@
 .Control-panel {
   height: 25%;
 	background-color: #FFFFFF;
-	display: inline;
 }
 
 .Instruction {
-
+  height: 100%;
+	background-color: #FFFFFF;
 }
 
 
