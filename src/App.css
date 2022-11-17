@@ -141,7 +141,7 @@
 }
 
 .toggle_input:checked + .toggle_label {
-  background-color: #4BD865;
+  background-color: #5657F6;
 }
 
 .toggle_input:checked + .toggle_label:after {
