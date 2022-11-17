@@ -6,13 +6,13 @@
 }
 
 .View-twitch {
-  height: 75%;
+  height: 100%;
   pointer-events: none;
 	background-color: #00FFFF;
 }
 
 .Pac-man-on-twitch {
-  height: 75%;
+  height: 100%;
 }
 
 .Control-panel {
