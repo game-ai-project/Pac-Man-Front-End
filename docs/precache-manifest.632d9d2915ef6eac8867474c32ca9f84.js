@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a81e1cda9efbb12056a0",
-    "url": "/Pac-Man-Front-End/static/css/main.517b9732.chunk.css"
+    "revision": "96fbea7de79491775431",
+    "url": "/Pac-Man-Front-End/static/css/main.33640d8c.chunk.css"
   },
   {
-    "revision": "a81e1cda9efbb12056a0",
-    "url": "/Pac-Man-Front-End/static/js/main.a81e1cda.chunk.js"
+    "revision": "96fbea7de79491775431",
+    "url": "/Pac-Man-Front-End/static/js/main.96fbea7d.chunk.js"
   },
   {
     "revision": "95ea83b6c7492a61ef7b",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/Pac-Man-Front-End/static/media/Twitch_view.43ff8e8f.png"
   },
   {
-    "revision": "f7e77fca6b5ae7b7fe961e1d5cc314a0",
+    "revision": "dc1242450365ea372230d1d070ce8965",
     "url": "/Pac-Man-Front-End/index.html"
   }
 ];
