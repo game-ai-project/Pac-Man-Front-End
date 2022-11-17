@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import twitch_view from './Twitch_view.png';
 import './App.css';
 
