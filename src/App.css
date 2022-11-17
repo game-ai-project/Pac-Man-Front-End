@@ -99,6 +99,13 @@
 	height: 20%;
 }
 
+.Audio-1 {
+  background-color: #030303;
+	height: 20%;
+	text-align: center;
+	justify-content: center;
+}
+
 .Action-log {
 	background-color: #00000F;
   height: 30%;
