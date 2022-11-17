@@ -72,8 +72,10 @@
 }
 
 .Audio-settings {
-	background-color: #0000FF;
+	background-color: #030303;
   height: 30%;
+	color: #5657F6;
+  text-align: center;
 }
 
 .Audio-space {

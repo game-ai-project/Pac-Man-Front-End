@@ -16,9 +16,10 @@ function App() {
 		      <div className="Instruction-space" />
 		      <div className="Instruction-2">Press the <b>"Record"</b> button and cheer/ooo with your passionate voicel</div>
 		    </div>
-		    <div className="Audio-settings" />
+		    <div className="Audio-settings">
 		      <div className="Audio-space" />
 		      <div className="Audio-title"><b>Audio settings</b></div>
+		    </div>
 		    <div className="Action-log" />
 		    <div className="Record" />
 		  </div>
