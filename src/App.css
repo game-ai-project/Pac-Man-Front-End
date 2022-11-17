@@ -3,6 +3,7 @@
 	height: 100vmin;
 	background-color: #030303;
 	display: inline;
+  flex-direction: column;
 }
 
 .View-twitch {
@@ -23,12 +24,6 @@
 	display: inline;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
