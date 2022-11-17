@@ -107,6 +107,14 @@
 	justify-content: center;
 }
 
+.Audio-volume {
+  background-color: #030303;
+	height: 20%;
+  text-align: left;
+  align-items: center;
+	justify-content: center;
+}
+
 .Action-log {
 	background-color: #00000F;
   height: 30%;

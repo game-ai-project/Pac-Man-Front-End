@@ -27,6 +27,7 @@ function App() {
             </div>
 		        <div className="Audio-1">Turn on/off background music</div>
 		      </div>
+		      <div className="Audio-volume">Volume</div>
 		    </div>
 		    <div className="Action-log" />
 		    <div className="Record" />
