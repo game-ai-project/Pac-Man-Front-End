@@ -3,6 +3,7 @@
   text-align: left;
 	display: flex;
 	height: auto;
+	max-height: 100%;
 }
 
 .Twitch-view {
