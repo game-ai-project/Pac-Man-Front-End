@@ -28,7 +28,11 @@ function App() {
 		        <div className="Audio-1">Turn on/off background music</div>
 		      </div>
 		      <div className="Audio-volume">Volume</div>
-		      <input type="range" name="speed" min="0" max="100"/>
+		      <div className="Volume-slider">
+		        <div>0</div>
+         	  <input type="range" name="speed" min="0" max="100"/>
+		        <div>100</div>
+		      </div>
 		    </div>
 		    <div className="Action-log" />
 		    <div className="Record" />

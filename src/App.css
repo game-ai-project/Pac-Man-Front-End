@@ -117,6 +117,11 @@
 	justify-content: center;
 }
 
+.Volume-slider {
+	display: flex;
+	height: 20%;
+}
+
 .Action-log {
 	background-color: #00000F;
   height: 30%;
@@ -180,13 +185,13 @@
 }
 
 input[type="range"] {
-  -webkit-appearance: none; /* 🚩これ無しだとスタイルがほぼ全く反映されないので注意 */
+  -webkit-appearance: none;
   appearance: none;
-  cursor: pointer; /* カーソルを分かりやすく */
-  outline: none; /* スライダーのアウトラインは見た目がキツイので消す */
-  height: 14px; /* バーの高さ */
-  width: 95%; /* バーの幅 */
-  background: #030303; /* バーの背景色 */
-  border-radius: 10px; /* バーの両端の丸み */
-  border: solid 3px #5657F6; /* バー周囲の線 */
+  cursor: pointer;
+  outline: none;
+  height: 14px;
+  width: 95%;
+  background: #030303;
+  border-radius: 10px;
+  border: solid 3px #5657F6;
 }
