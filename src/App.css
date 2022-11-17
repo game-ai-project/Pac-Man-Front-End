@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+	color: #030303
 }
 
 .View-of-Twitch {
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
