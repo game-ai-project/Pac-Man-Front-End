@@ -43,7 +43,9 @@ function App() {
             <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
           </ul>
 		    </div>
-		    <div className="Record" />
+		    <div className="Record">
+          <button class="rounded-corner">Record</button>
+		    </div>
 		  </div>
     </div>
   );
