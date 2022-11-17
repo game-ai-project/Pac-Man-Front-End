@@ -1,6 +1,7 @@
 .App {
 	background-color: #030303;
   text-align: left;
+	display: flex;
 	height: 100vmin;
 }
 
