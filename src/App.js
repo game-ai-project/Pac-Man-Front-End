@@ -4,7 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-		  <img src={twitch_view} className="View-of-Twitch" alt="temporaly" />
+		  <div className="View-Twitch">
+		    <img src={twitch_view} className="Pac-Man-on-Twitch" alt="temporaly" />
+		  </div>
+		  
 		  <div className="Instruction" />
 		  <div className="Audio-settings" />
 		  <div className="Action-log" />

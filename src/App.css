@@ -12,6 +12,7 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+	flexDirection: 'row';
 }
 
 .Instruction {
