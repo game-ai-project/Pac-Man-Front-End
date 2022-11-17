@@ -2,24 +2,21 @@
   text-align: left;
 	height: 100vmin;
 	background-color: #030303;
-  flex-direction: column;
-}
-
-.View-twitch {
-  height: 100%;
-  pointer-events: none;
-	background-color: #00FFFF;
 }
 
 .Pac-man-on-twitch {
   height: 100%;
+	background-color: #FF00FF;
 }
 
 .Control-panel {
   height: 25%;
-  pointer-events: none;
 	background-color: #FFFFFF;
 	display: inline;
+}
+
+.Instruction {
+
 }
 
 

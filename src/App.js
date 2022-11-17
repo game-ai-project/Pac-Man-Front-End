@@ -4,9 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-		  <div className="View-twitch">
-		    <img src={twitch_view} className="Pac-man-on-twitch"/>
-		  </div>
+		  <img src={twitch_view} className="Pac-man-on-twitch"/>
 		  
 		  <div className="Control-panel">
 		    <div className="Instruction" />
