@@ -2,28 +2,21 @@
   text-align: left;
 	height: 100vmin;
 	background-color: #030303;
+	flex: 1;
+  width: '100%';
+  flexDirection: 'row';
+  justifyContent: 'center';
 }
 
 .View-twitch {
   width: 75vmin;
   pointer-events: none;
-	display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-	flexDirection: 'row';
+	background-color: #00FFFF;
 }
 
 .Control-panel {
   width: 25vmin;
   pointer-events: none;
-	display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-	flexDirection: 'row';
 	background-color: #FFFFFF;
 }
 
