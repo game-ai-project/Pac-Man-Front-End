@@ -5,9 +5,13 @@
 }
 
 .View-of-Twitch {
-	align: left;
   height: 75vmin;
   pointer-events: none;
+}
+
+.Instruction {
+  height: 35vmin;
+	background-color: #FFFFFF;
 }
 
 @media (prefers-reduced-motion: no-preference) {
