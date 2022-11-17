@@ -9,13 +9,13 @@
 }
 
 .View-twitch {
-  width: 75vmin;
+  height: 75vmin;
   pointer-events: none;
 	background-color: #00FFFF;
 }
 
 .Control-panel {
-  width: 25vmin;
+  height: 25vmin;
   pointer-events: none;
 	background-color: #FFFFFF;
 }
