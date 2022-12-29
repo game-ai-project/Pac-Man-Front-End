@@ -9,10 +9,8 @@ class VoiceComponent extends Component {
     this.state = {
       supported: true,
       lang: props.lang || "en-US",
-      text:
-        "How many Emo kids does it take to screw in a lightbulb?\nNone, they all sit in the dark and cry",
       autoPlay: false,
-      isSpeeking: false
+      isListening: false
     };
   }
 
@@ -21,42 +19,30 @@ class VoiceComponent extends Component {
     this._recognizer = new Recognition();
 
 		console.log(this._recognizer);
-
-    if ("speechSynthesis" in window) {
-      this._speech = new SpeechSynthesisUtterance();
-      this._speech.onend = () => this.setState({ isSpeeking: false });
-    } else {
-      this.setState({ supported: false });
-    }
   }
 
   componentDidMount() {
     if (this.state.supported && this.state.autoPlay) {
-      this.speak();
+      this.recognise();
     }
   }
 
-  speak = () => {
-    this._speech.text = this.state.text;
-    this._speech.lang = this.state.lang;
-    this.setState({ isSpeeking: true });
-    window.speechSynthesis.speak(this._speech);
-  };
-
-  stop = () => {
-    window.speechSynthesis.cancel();
-  };
+	recognise = () => {
+    this.setState({ isListening: true });
+		this._recognizer.lang = this.state.lang;
+		this._recognizer.start();
+	}
 
   handleTextChange = e => {
     this.setState({ text: e.target.value });
   };
 
   render() {
-    const { text, isSpeeking } = this.state;
+    const { text, isListening } = this.state;
     return (
       <div>
         <br />
-        <button disabled={isSpeeking} onClick={this.speak} className="rounded-corner">
+        <button disabled={isListening} onClick={this.recognise} className="rounded-corner">
           Record
         </button>
       </div>
