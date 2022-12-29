@@ -1,12 +1,12 @@
 import React, { Component }  from 'react';
-import twitch_view from './Twitch_view.png';
+import { TwitchStream } from 'react-twitch-stream';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
 		  <div className="Twitch-view">
-		    <img src={twitch_view} className="Pac-Man" />
+				<TwitchStream channelName='petepittawat' allowFullScreen autoPlay muted/>
 		  </div>
 		  
 		  <div className="User-interface">

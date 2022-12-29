@@ -1,16 +1,22 @@
 {
-  "main.css": "/Pac-Man-Front-End/static/css/main.041e25b8.chunk.css",
-  "main.js": "/Pac-Man-Front-End/static/js/main.792a953f.chunk.js",
-  "main.js.map": "/Pac-Man-Front-End/static/js/main.792a953f.chunk.js.map",
-  "static/js/1.95ea83b6.chunk.js": "/Pac-Man-Front-End/static/js/1.95ea83b6.chunk.js",
-  "static/js/1.95ea83b6.chunk.js.map": "/Pac-Man-Front-End/static/js/1.95ea83b6.chunk.js.map",
-  "static/js/2.fe9e49dc.chunk.js": "/Pac-Man-Front-End/static/js/2.fe9e49dc.chunk.js",
-  "static/js/2.fe9e49dc.chunk.js.map": "/Pac-Man-Front-End/static/js/2.fe9e49dc.chunk.js.map",
-  "runtime~main.js": "/Pac-Man-Front-End/static/js/runtime~main.9eae7e77.js",
-  "runtime~main.js.map": "/Pac-Man-Front-End/static/js/runtime~main.9eae7e77.js.map",
-  "static/media/Twitch_view.png": "/Pac-Man-Front-End/static/media/Twitch_view.43ff8e8f.png",
-  "static/css/main.041e25b8.chunk.css.map": "/Pac-Man-Front-End/static/css/main.041e25b8.chunk.css.map",
-  "index.html": "/Pac-Man-Front-End/index.html",
-  "precache-manifest.7eb1c3f7f3329d9c340a0aadac5ad1be.js": "/Pac-Man-Front-End/precache-manifest.7eb1c3f7f3329d9c340a0aadac5ad1be.js",
-  "service-worker.js": "/Pac-Man-Front-End/service-worker.js"
+  "files": {
+    "main.css": "/Pac-Man-Front-End/static/css/main.a4e45852.chunk.css",
+    "main.js": "/Pac-Man-Front-End/static/js/main.a0ce999a.chunk.js",
+    "main.js.map": "/Pac-Man-Front-End/static/js/main.a0ce999a.chunk.js.map",
+    "runtime-main.js": "/Pac-Man-Front-End/static/js/runtime-main.fd6c94ba.js",
+    "runtime-main.js.map": "/Pac-Man-Front-End/static/js/runtime-main.fd6c94ba.js.map",
+    "static/js/2.e9d9a9f3.chunk.js": "/Pac-Man-Front-End/static/js/2.e9d9a9f3.chunk.js",
+    "static/js/2.e9d9a9f3.chunk.js.map": "/Pac-Man-Front-End/static/js/2.e9d9a9f3.chunk.js.map",
+    "static/js/3.bbb6a00c.chunk.js": "/Pac-Man-Front-End/static/js/3.bbb6a00c.chunk.js",
+    "static/js/3.bbb6a00c.chunk.js.map": "/Pac-Man-Front-End/static/js/3.bbb6a00c.chunk.js.map",
+    "index.html": "/Pac-Man-Front-End/index.html",
+    "static/css/main.a4e45852.chunk.css.map": "/Pac-Man-Front-End/static/css/main.a4e45852.chunk.css.map",
+    "static/js/2.e9d9a9f3.chunk.js.LICENSE.txt": "/Pac-Man-Front-End/static/js/2.e9d9a9f3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd6c94ba.js",
+    "static/js/2.e9d9a9f3.chunk.js",
+    "static/css/main.a4e45852.chunk.css",
+    "static/js/main.a0ce999a.chunk.js"
+  ]
 }
