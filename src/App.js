@@ -62,6 +62,7 @@ function App() {
 		    </div>
 		    <div className="Record">
           <button class="rounded-corner" onClick={SpeechRecognition.startListening}>Record</button>
+		      <p>{transcript}</p>
 		    </div>
 		  </div>
     </div>
