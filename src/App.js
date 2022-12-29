@@ -9,7 +9,7 @@ function App() {
 				<iframe
 			    src="https://player.twitch.tv/?channel=tororo_vtuber&parent=game-ai-project.github.io&muted=true"
 			    height="720"
-			    width="1280"
+			    width="720"
 			    allowfullscreen>
 				</iframe>
 		  </div>
