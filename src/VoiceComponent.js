@@ -20,6 +20,8 @@ class VoiceComponent extends Component {
 		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     this._recognizer = new Recognition();
 
+		console.log(this._recognizer);
+
     if ("speechSynthesis" in window) {
       this._speech = new SpeechSynthesisUtterance();
       this._speech.onend = () => this.setState({ isSpeeking: false });
