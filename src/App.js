@@ -3,6 +3,11 @@ import { TwitchStream } from 'react-twitch-stream';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import './App.css';
 
+function send_message() {
+	SpeechRecognition.startListening();
+
+}
+
 function App() {
 	const {
     transcript,
@@ -61,8 +66,7 @@ function App() {
           </ul>
 		    </div>
 		    <div className="Record">
-          <button class="rounded-corner" onClick={SpeechRecognition.startListening}>Record</button>
-		      <p>{transcript}</p>
+          <button class="rounded-corner" onClick={send_message}>Record</button>
 		    </div>
 		  </div>
     </div>
