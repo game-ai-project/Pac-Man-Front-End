@@ -46,12 +46,6 @@ class VoiceComponent extends Component {
     const { text, isSpeeking } = this.state;
     return (
       <div>
-        <textarea
-          value={text}
-          onChange={this.handleTextChange}
-          cols="40"
-          rows="10"
-        />
         <br />
         <button disabled={isSpeeking} onClick={this.speak}>
           Speak
