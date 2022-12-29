@@ -3,6 +3,7 @@ import './App.css';
 
 
 class VoiceComponent extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +15,11 @@ class VoiceComponent extends Component {
       isSpeeking: false
     };
   }
+
   componentWillMount() {
+		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    this._recognizer = new Recognition();
+
     if ("speechSynthesis" in window) {
       this._speech = new SpeechSynthesisUtterance();
       this._speech.onend = () => this.setState({ isSpeeking: false });
