@@ -29,8 +29,12 @@ class VoiceComponent extends Component {
 
 	recognise = () => {
     this.setState({ isListening: true });
+
 		this._recognizer.lang = this.state.lang;
-		this._recognizer.start();
+		if (this.state.isListening == false) {
+			this._recognizer.start();
+		}
+
     this.setState({ isListening: false });
 	}
 
@@ -39,7 +43,7 @@ class VoiceComponent extends Component {
   };
 
   render() {
-    const { text, isListening } = this.state;
+    const { isListening } = this.state;
     return (
       <div>
         <br />
