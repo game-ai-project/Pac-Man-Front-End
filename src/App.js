@@ -4,8 +4,9 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import './App.css';
 
 function send_message() {
-	SpeechRecognition.startListening();
+	var transcript = SpeechRecognition.startListening();
 
+	console.log(transcript);
 }
 
 function App() {
