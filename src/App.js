@@ -1,25 +1,11 @@
 import React, { Component }  from 'react';
 import { TwitchStream } from 'react-twitch-stream';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import VoiceComponent from "./VoiceComponent";
 import './App.css';
 
-function send_message() {
-	var transcript = SpeechRecognition.startListening();
-
-	console.log(transcript);
-}
 
 function App() {
-	const {
-    transcript,
-    listening,
-    resetTranscript,
-    browserSupportsSpeechRecognition
-  } = useSpeechRecognition();
-
-  if (!browserSupportsSpeechRecognition) {
-    return <span>Browser doesn't support speech recognition.</span>;
-  }
 
   return (
     <div className="App">
@@ -67,7 +53,7 @@ function App() {
           </ul>
 		    </div>
 		    <div className="Record">
-          <button class="rounded-corner" onClick={send_message}>Record</button>
+		      <VoiceComponent />
 		    </div>
 		  </div>
     </div>
