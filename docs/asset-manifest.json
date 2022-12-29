@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pac-Man-Front-End/static/css/main.a4e45852.chunk.css",
-    "main.js": "/Pac-Man-Front-End/static/js/main.a0ce999a.chunk.js",
-    "main.js.map": "/Pac-Man-Front-End/static/js/main.a0ce999a.chunk.js.map",
+    "main.js": "/Pac-Man-Front-End/static/js/main.82ebac89.chunk.js",
+    "main.js.map": "/Pac-Man-Front-End/static/js/main.82ebac89.chunk.js.map",
     "runtime-main.js": "/Pac-Man-Front-End/static/js/runtime-main.fd6c94ba.js",
     "runtime-main.js.map": "/Pac-Man-Front-End/static/js/runtime-main.fd6c94ba.js.map",
     "static/js/2.e9d9a9f3.chunk.js": "/Pac-Man-Front-End/static/js/2.e9d9a9f3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.fd6c94ba.js",
     "static/js/2.e9d9a9f3.chunk.js",
     "static/css/main.a4e45852.chunk.css",
-    "static/js/main.a0ce999a.chunk.js"
+    "static/js/main.82ebac89.chunk.js"
   ]
 }

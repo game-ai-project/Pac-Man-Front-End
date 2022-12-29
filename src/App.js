@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
 		  <div className="Twitch-view">
-				<TwitchStream channelName='petepittawat' allowFullScreen autoPlay muted/>
+				<TwitchStream channelName='tororo_vtuber' allowFullScreen autoPlay muted/>
 		  </div>
 		  
 		  <div className="User-interface">
