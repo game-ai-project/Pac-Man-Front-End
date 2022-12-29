@@ -4,6 +4,17 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import './App.css';
 
 function App() {
+	const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition
+  } = useSpeechRecognition();
+
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }
+
   return (
     <div className="App">
 		  <div className="Twitch-view">
@@ -50,7 +61,7 @@ function App() {
           </ul>
 		    </div>
 		    <div className="Record">
-          <button class="rounded-corner">Record</button>
+          <button class="rounded-corner" onClick={SpeechRecognition.startListening}>Record</button>
 		    </div>
 		  </div>
     </div>
