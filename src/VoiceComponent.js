@@ -33,7 +33,7 @@ class VoiceComponent extends Component {
 		this._recognizer.lang = this.state.lang;
 		if (this.state.isListening == false) {
 			this._recognizer.start();
-			this._recognizer.end();
+			this._recognizer.stop();
 		}
 
     this.setState({ isListening: false });
