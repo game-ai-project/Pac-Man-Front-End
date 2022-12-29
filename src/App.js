@@ -6,7 +6,12 @@ function App() {
   return (
     <div className="App">
 		  <div className="Twitch-view">
-				<TwitchStream channelName='tororo_vtuber' allowFullScreen autoPlay muted/>
+				<iframe
+			    src="https://player.twitch.tv/?channel=dallas&parent=streamernews.example.com&muted=true"
+			    height="720"
+			    width="1280"
+			    allowfullscreen>
+				</iframe>
 		  </div>
 		  
 		  <div className="User-interface">
