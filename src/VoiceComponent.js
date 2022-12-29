@@ -31,6 +31,7 @@ class VoiceComponent extends Component {
     this.setState({ isListening: true });
 		this._recognizer.lang = this.state.lang;
 		this._recognizer.start();
+    this.setState({ isListening: false });
 	}
 
   handleTextChange = e => {
