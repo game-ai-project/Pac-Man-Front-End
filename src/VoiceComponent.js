@@ -50,9 +50,6 @@ class VoiceComponent extends Component {
         <button disabled={isSpeeking} onClick={this.speak}>
           Speak
         </button>
-        <button disabled={!isSpeeking} onClick={this.stop}>
-          Stop
-        </button>
       </div>
     );
   }
