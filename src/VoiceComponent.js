@@ -49,7 +49,7 @@ class VoiceComponent extends Component {
     return (
       <div>
         <br />
-        <button disabled={isSpeeking} onClick={this.speak}>
+        <button disabled={isSpeeking} onClick={this.speak} className="rounded-corner">
           Speak
         </button>
       </div>
