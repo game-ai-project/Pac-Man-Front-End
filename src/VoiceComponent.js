@@ -6,6 +6,7 @@ class VoiceComponent extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       supported: true,
       lang: props.lang || "en-US",
@@ -23,7 +24,6 @@ class VoiceComponent extends Component {
 
   componentDidMount() {
     if (this.state.supported && this.state.autoPlay) {
-      // this.recognise();
     }
   }
 
@@ -33,11 +33,11 @@ class VoiceComponent extends Component {
 		this._recognizer.lang = this.state.lang;
 		if (this.state.isListening == false) {
 			this._recognizer.start();
-			this._recognizer.stop();
 		}
 
     this.setState({ isListening: false });
 	}
+
 
   handleTextChange = e => {
     this.setState({ text: e.target.value });
@@ -45,6 +45,7 @@ class VoiceComponent extends Component {
 
   render() {
     const { isListening } = this.state;
+		console.log(isListening);
     return (
       <div>
         <br />
