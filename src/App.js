@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import { TwitchStream } from 'react-twitch-stream';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import './App.css';
 
 function App() {
