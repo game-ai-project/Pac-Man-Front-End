@@ -7,7 +7,7 @@ function App() {
     <div className="App">
 		  <div className="Twitch-view">
 				<iframe
-			    src="https://player.twitch.tv/?channel=dallas&parent=streamernews.example.com&muted=true"
+			    src="https://player.twitch.tv/?channel=tororo_vtuber&parent=streamernews.example.com&muted=true"
 			    height="720"
 			    width="1280"
 			    allowfullscreen>
