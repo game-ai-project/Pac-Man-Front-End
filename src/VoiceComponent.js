@@ -23,7 +23,7 @@ class VoiceComponent extends Component {
 
   componentDidMount() {
     if (this.state.supported && this.state.autoPlay) {
-      this.recognise();
+      // this.recognise();
     }
   }
 
