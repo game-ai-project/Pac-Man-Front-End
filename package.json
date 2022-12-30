@@ -12,8 +12,11 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^4.0.3",
     "react-speech-recognition": "^3.10.0",
+    "react-twitch-embed": "^3.0.1",
     "react-twitch-stream": "^1.0.4",
+    "socket.io-client": "^4.5.4",
     "styled-components": "^5.3.6",
+    "twitch-stream-embed": "^1.0.5",
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://game-ai-project.github.io/Pac-Man-Front-End/",

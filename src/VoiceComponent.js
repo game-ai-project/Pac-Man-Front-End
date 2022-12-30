@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import io, { Socket } from 'socket.io-client';
 import './App.css';
 
 
@@ -8,44 +9,42 @@ class VoiceComponent extends Component {
     super(props);
 
     this.state = {
-      supported: true,
       lang: props.lang || "en-US",
-      autoPlay: false,
       isListening: false
     };
   }
 
   componentWillMount() {
 		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+		// const socket = io("http://example.com/");
+
     this._recognizer = new Recognition();
+
+		this._recognizer.onend = (event) => {
+			this.setState({isListening: false})
+		}
+
+		this._recognizer.onresult = (event) => {
+    	console.log(event.results[0][0].transcript);
+
+			// socket.emit("post", {message: event.results[0][0].transcript})
+  	}
 
 		console.log(this._recognizer);
   }
 
-  componentDidMount() {
-    if (this.state.supported && this.state.autoPlay) {
-    }
-  }
-
 	recognise = () => {
-    this.setState({ isListening: true });
 
-		this._recognizer.lang = this.state.lang;
 		if (this.state.isListening == false) {
+			this.setState({isListening: true})
+		  this._recognizer.lang = this.state.lang;
 			this._recognizer.start();
 		}
-
-    this.setState({ isListening: false });
 	}
 
 
-  handleTextChange = e => {
-    this.setState({ text: e.target.value });
-  };
-
   render() {
     const { isListening } = this.state;
-		console.log(isListening);
     return (
       <div>
         <br />
