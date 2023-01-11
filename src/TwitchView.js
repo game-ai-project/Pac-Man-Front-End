@@ -11,7 +11,7 @@ class TwitchView extends Component {
 	render() {
   	return (
 				<TwitchPlayer
-          channel="ampm_m"
+          channel="petepittawat"
           width="100%"
           height="100%"
 					muted={this.props.muted}
