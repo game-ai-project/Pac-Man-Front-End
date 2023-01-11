@@ -15,6 +15,7 @@ class TwitchView extends Component {
           width="100%"
           height="100%"
 					muted={this.props.muted}
+					hideControls={true}
           parent={['codesandbox.io', 'localhost']}
         />
   	);
