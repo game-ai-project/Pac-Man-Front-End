@@ -16,7 +16,7 @@ class VoiceComponent extends Component {
 
   componentWillMount() {
 		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-		// const socket = io("http://example.com/");
+		const socket = io("wss://760d-133-19-43-10.jp.ngrok.io:8000");
 
     this._recognizer = new Recognition();
 
@@ -27,7 +27,7 @@ class VoiceComponent extends Component {
 		this._recognizer.onresult = (event) => {
     	console.log(event.results[0][0].transcript);
 
-			// socket.emit("post", {message: event.results[0][0].transcript})
+			socket.emit("post", {message: event.results[0][0].transcript})
   	}
 
 		console.log(this._recognizer);
