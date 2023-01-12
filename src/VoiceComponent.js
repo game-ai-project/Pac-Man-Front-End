@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import io, { Socket } from 'socket.io-client';
-//import { w3cwebsocket as W3CWebSocket } from "websocket";
 import './App.css';
 
 
@@ -17,7 +16,6 @@ class VoiceComponent extends Component {
 
   componentWillMount() {
 		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-		//const client = new W3CWebSocket('wss://28fe-133-19-43-10.jp.ngrok.io');
 
     this._recognizer = new Recognition();
 
