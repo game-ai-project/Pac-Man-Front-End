@@ -15,37 +15,37 @@ class VoiceComponent extends Component {
   }
 
   componentWillMount() {
-		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-		const socket = io("28fe-133-19-43-10.jp.ngrok.io");
+    const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const socket = io("28fe-133-19-43-10.jp.ngrok.io");
 
     this._recognizer = new Recognition();
 
-		this._recognizer.onend = (event) => {
-			this.setState({isListening: false})
-		}
+    this._recognizer.onend = (event) => {
+      this.setState({isListening: false})
+    }
 
-		this._recognizer.onresult = (event) => {
+    this._recognizer.onresult = (event) => {
 
-			io.on('connection', function (socket) {
-				console.log(event.results[0][0].transcript);
-			})
+      io.on('connection', function (socket) {
+        console.log(event.results[0][0].transcript);
+      })
 
-    	console.log(event.results[0][0].transcript);
+      console.log(event.results[0][0].transcript);
 
-			// socket.emit("post", {message: event.results[0][0].transcript})
-  	}
+      // socket.emit("post", {message: event.results[0][0].transcript})
+    }
 
-		console.log(this._recognizer);
+    console.log(this._recognizer);
   }
 
-	recognise = () => {
+  recognise = () => {
 
-		if (this.state.isListening == false) {
-			this.setState({isListening: true})
-		  this._recognizer.lang = this.state.lang;
-			this._recognizer.start();
-		}
-	}
+    if (this.state.isListening == false) {
+      this.setState({isListening: true})
+      this._recognizer.lang = this.state.lang;
+      this._recognizer.start();
+    }
+  }
 
 
   render() {
