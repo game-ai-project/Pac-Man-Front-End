@@ -53,13 +53,6 @@ class App extends Component {
 			        <div className="Audio-1">Turn on/off background music</div>
 			      </div>
 			    </div>
-			    <div className="Action-log">
-			      <div className="Action-log-space" />
-			      <div className="Action-log-title"><b></b></div>
-			      <ul>
-  	          <li></li>
-  	        </ul>
-			    </div>
 			    <div className="Record">
 			      <VoiceComponent />
 			    </div>
