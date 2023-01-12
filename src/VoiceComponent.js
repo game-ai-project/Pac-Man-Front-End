@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import io, { Socket } from 'socket.io-client';
-import { w3cwebsocket as W3CWebSocket } from "websocket";
+//import { w3cwebsocket as W3CWebSocket } from "websocket";
 import './App.css';
 
 
@@ -17,7 +17,7 @@ class VoiceComponent extends Component {
 
   componentWillMount() {
 		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-		const client = new W3CWebSocket('wss://28fe-133-19-43-10.jp.ngrok.io');
+		//const client = new W3CWebSocket('wss://28fe-133-19-43-10.jp.ngrok.io');
 
     this._recognizer = new Recognition();
 
@@ -26,11 +26,7 @@ class VoiceComponent extends Component {
 		}
 
 		this._recognizer.onresult = (event) => {
-		  // const socket = io("28fe-133-19-43-10.jp.ngrok.io:8000", { transports: ['websocket', 'polling', 'flashsocket'] });
-
-			client.onopen = () => {
-      	console.log('WebSocket Client Connected');
-    	};
+		  const socket = io("28fe-133-19-43-10.jp.ngrok.io:8000");
 
     	console.log(event.results[0][0].transcript);
 
