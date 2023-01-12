@@ -32,7 +32,7 @@ class VoiceComponent extends Component {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify({
-					message: 'text',
+					message: text,
 				}),
 			})
 				.then((res) => {
