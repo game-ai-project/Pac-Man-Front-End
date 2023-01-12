@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Pac-Man-Front-End/static/css/main.a4e45852.chunk.css",
-    "main.js": "/Pac-Man-Front-End/static/js/main.6a26079f.chunk.js",
-    "main.js.map": "/Pac-Man-Front-End/static/js/main.6a26079f.chunk.js.map",
+    "main.js": "/Pac-Man-Front-End/static/js/main.a8b2b939.chunk.js",
+    "main.js.map": "/Pac-Man-Front-End/static/js/main.a8b2b939.chunk.js.map",
     "runtime-main.js": "/Pac-Man-Front-End/static/js/runtime-main.4900e0e4.js",
     "runtime-main.js.map": "/Pac-Man-Front-End/static/js/runtime-main.4900e0e4.js.map",
-    "static/js/2.723793c9.chunk.js": "/Pac-Man-Front-End/static/js/2.723793c9.chunk.js",
-    "static/js/2.723793c9.chunk.js.map": "/Pac-Man-Front-End/static/js/2.723793c9.chunk.js.map",
+    "static/js/2.665c1f35.chunk.js": "/Pac-Man-Front-End/static/js/2.665c1f35.chunk.js",
+    "static/js/2.665c1f35.chunk.js.map": "/Pac-Man-Front-End/static/js/2.665c1f35.chunk.js.map",
     "static/js/3.1120cd4e.chunk.js": "/Pac-Man-Front-End/static/js/3.1120cd4e.chunk.js",
     "static/js/3.1120cd4e.chunk.js.map": "/Pac-Man-Front-End/static/js/3.1120cd4e.chunk.js.map",
     "index.html": "/Pac-Man-Front-End/index.html",
     "static/css/main.a4e45852.chunk.css.map": "/Pac-Man-Front-End/static/css/main.a4e45852.chunk.css.map",
-    "static/js/2.723793c9.chunk.js.LICENSE.txt": "/Pac-Man-Front-End/static/js/2.723793c9.chunk.js.LICENSE.txt"
+    "static/js/2.665c1f35.chunk.js.LICENSE.txt": "/Pac-Man-Front-End/static/js/2.665c1f35.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4900e0e4.js",
-    "static/js/2.723793c9.chunk.js",
+    "static/js/2.665c1f35.chunk.js",
     "static/css/main.a4e45852.chunk.css",
-    "static/js/main.6a26079f.chunk.js"
+    "static/js/main.a8b2b939.chunk.js"
   ]
 }
