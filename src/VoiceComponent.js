@@ -16,7 +16,7 @@ class VoiceComponent extends Component {
 
   componentWillMount() {
 		const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-		const socket = io("wss://28fe-133-19-43-10.jp.ngrok.io", { transports: ['websocket', 'polling', 'flashsocket'] });
+		const socket = io("28fe-133-19-43-10.jp.ngrok.io", { transports: ['websocket', 'polling', 'flashsocket'] });
 
     this._recognizer = new Recognition();
 
