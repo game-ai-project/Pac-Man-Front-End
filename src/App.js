@@ -55,7 +55,7 @@ class App extends Component {
 			    </div>
 			    <div className="Action-log">
 			      <div className="Action-log-space" />
-			      <div className="Action-log-title"><b>Action log</b></div>
+			      <div className="Action-log-title"><b></b></div>
 			      <ul>
   	          <li></li>
   	        </ul>
