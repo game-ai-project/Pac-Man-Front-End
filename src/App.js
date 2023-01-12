@@ -57,9 +57,7 @@ class App extends Component {
 			      <div className="Action-log-space" />
 			      <div className="Action-log-title"><b>Action log</b></div>
 			      <ul>
-  	          <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
-  	          <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
-  	          <li>18/11/2022 10:00:32 Ms. PAC-MAN Get Boo!</li>
+  	          <li></li>
   	        </ul>
 			    </div>
 			    <div className="Record">
