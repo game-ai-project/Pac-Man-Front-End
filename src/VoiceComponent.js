@@ -1,60 +1,73 @@
-import React, { Component } from "react";
-import io, { Socket } from 'socket.io-client';
 import './App.css';
 
+import React, { Component } from 'react';
 
 class VoiceComponent extends Component {
+	constructor(props) {
+		super(props);
 
-  constructor(props) {
-    super(props);
+		this.state = {
+			lang: props.lang || 'en-US',
+			isListening: false,
+		};
+	}
 
-    this.state = {
-      lang: props.lang || "en-US",
-      isListening: false
-    };
-  }
+	componentWillMount() {
+		const Recognition =
+			window.SpeechRecognition || window.webkitSpeechRecognition;
 
-  componentWillMount() {
-    const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    const socket = io("wss://28fe-133-19-43-10.jp.ngrok.io:8000");
+		this._recognizer = new Recognition();
 
-    this._recognizer = new Recognition();
+		this._recognizer.onend = (event) => {
+			this.setState({ isListening: false });
+		};
 
-    this._recognizer.onend = (event) => {
-      this.setState({isListening: false})
-    }
+		this._recognizer.onresult = (event) => {
+			const text = event.results[0][0].transcript;
+			console.log(text);
 
-    this._recognizer.onresult = (event) => {
+			fetch('http://20.194.195.200:8000/sentiment', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					message: 'text',
+				}),
+			})
+				.then((res) => {
+					//TODO: Do something with this result, for example, let user know that they send the voice successfully to the server
+					console.log(res.json());
+				})
+				.catch((err) => {
+					//TODO: In case some error happens, let the user know!
+				});
+		};
+	}
 
-      console.log(event.results[0][0].transcript);
+	recognise = () => {
+		if (this.state.isListening == false) {
+			this.setState({ isListening: true });
+			this._recognizer.lang = this.state.lang;
+			this._recognizer.start();
+		}
+	};
 
-      // socket.emit("post", {message: event.results[0][0].transcript})
-    }
-
-    console.log(this._recognizer);
-  }
-
-  recognise = () => {
-
-    if (this.state.isListening == false) {
-      this.setState({isListening: true})
-      this._recognizer.lang = this.state.lang;
-      this._recognizer.start();
-    }
-  }
-
-
-  render() {
-    const { isListening } = this.state;
-    return (
-      <div>
-        <br />
-        <button disabled={isListening} onClick={this.recognise} className="rounded-corner">
-          Record
-        </button>
-      </div>
-    );
-  }
+	render() {
+		const { isListening } = this.state;
+		return (
+			<div>
+				<br />
+				<button
+					disabled={isListening}
+					onClick={this.recognise}
+					className='rounded-corner'
+				>
+					{isListening ? "Listening..." : "Record"}
+				</button>
+			</div>
+		);
+	}
 }
 
 export default VoiceComponent;
