@@ -1,76 +1,72 @@
 import './App.css';
 
-import React, { Component } from 'react';
+import { useEffect, useState } from 'react';
 
-class VoiceComponent extends Component {
-	constructor(props) {
-		super(props);
+const ENDPOINT_URL = 'https://20.194.195.200:8000/sentiment';
 
-		this.state = {
-			lang: props.lang || 'en-US',
-			isListening: false,
-		};
-	}
+const VoiceButton = ({ lang = 'en-US' }) => {
+	const [isListening, setIsListening] = useState(false);
+	const [isProcessing, setIsProcessing] = useState(false);
 
-	componentWillMount() {
-		const Recognition =
-			window.SpeechRecognition || window.webkitSpeechRecognition;
+	const [recognizer] = useState(
+		(window.SpeechRecognition && new window.SpeechRecognition()) ||
+			(window.webkitSpeechRecognition && new window.webkitSpeechRecognition())
+	);
 
-		this._recognizer = new Recognition();
-
-		this._recognizer.onend = (event) => {
-			this.setState({ isListening: false });
+	useEffect(() => {
+		recognizer.onend = () => {
+			setIsListening(false);
 		};
 
-		this._recognizer.onresult = (event) => {
+		recognizer.onresult = async (event) => {
 			const text = event.results[0][0].transcript;
-			console.log(text);
+			console.log(`Recognized text: ${text}`);
 
-			fetch('https://20.194.195.200:8000/sentiment', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-					message: text,
-				}),
-			})
-				.then((res) => {
-				})
-				.then(data => {
-					alert(`Your message "${text}" was successfully recorded.`)
-					console.log(data)
-				})
-				.catch((err) => {
-					alert('Something went wrong. Please try again later.')
-					console.log(err)
+			setIsProcessing(true);
+			try {
+				const response = await fetch(ENDPOINT_URL, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						message: text,
+					}),
 				});
+				const data = await response.json();
+				alert(`Your message was successfully recorded.\nText: "${text}"`);
+				console.log(data);
+			} catch (err) {
+				alert('Something went wrong. Please try again later.');
+				console.log(err);
+			} finally {
+				setIsProcessing(false);
+			}
 		};
-	}
+	}, [recognizer]);
 
-	recognise = () => {
-		if (this.state.isListening == false) {
-			this.setState({ isListening: true });
-			this._recognizer.lang = this.state.lang;
-			this._recognizer.start();
+	const onRecognize = () => {
+		if (isListening === false) {
+			setIsListening(true);
+			recognizer.lang = lang;
+			recognizer.start();
 		}
 	};
 
-	render() {
-		const { isListening } = this.state;
-		return (
-			<div>
-				<br />
-				<button
-					disabled={isListening}
-					onClick={this.recognise}
-					className='rounded-corner'
-				>
-					{isListening ? "Listening..." : "Record"}
-				</button>
-			</div>
-		);
-	}
-}
-
-export default VoiceComponent;
+	return (
+		<div>
+			<button
+				disabled={isListening || isProcessing}
+				onClick={onRecognize}
+				className={isListening || isProcessing ? 'record-button disabled' : 'record-button'}
+			>
+				{isListening
+					? 'Listening...'
+					: isProcessing
+					? 'Processing...'
+					: 'Record'}
+			</button>
+		</div>
+	);
+};
+export default VoiceButton;

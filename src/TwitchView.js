@@ -1,25 +1,14 @@
-import React, { Component, useRef } from "react";
-import { TwitchPlayer } from 'react-twitch-embed'
+import { TwitchPlayer } from 'react-twitch-embed';
 
-
-class TwitchView extends Component {
-	constructor(props) {
-    super(props);
-
-  }
-
-	render() {
-  	return (
-				<TwitchPlayer
-          channel="petepittawat"
-          width="100%"
-          height="100%"
-					muted={this.props.muted}
-					hideControls={true}
-          parent={['codesandbox.io', 'localhost']}
-        />
-  	);
-	}
-}
+const TwitchView = ({ isMuted }) => (
+	<TwitchPlayer
+		channel='petepittawat'
+		width='100%'
+		height='100%'
+		muted={isMuted}
+		hideControls={true}
+		parent={['localhost']}
+	/>
+);
 
 export default TwitchView;
