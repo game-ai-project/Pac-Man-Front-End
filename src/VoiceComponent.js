@@ -26,7 +26,7 @@ class VoiceComponent extends Component {
 			const text = event.results[0][0].transcript;
 			console.log(text);
 
-			fetch('http://20.194.195.200:8000/sentiment', {
+			fetch('https://20.194.195.200:8000/sentiment', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
