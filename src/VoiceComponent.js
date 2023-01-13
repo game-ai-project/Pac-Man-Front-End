@@ -38,12 +38,12 @@ class VoiceComponent extends Component {
 				.then((res) => {
 				})
 				.then(data => {
-					alert(`Your message "${text}" was successfully records.`)
+					alert(`Your message "${text}" was successfully recorded.`)
 					console.log(data)
 				})
 				.catch((err) => {
 					alert('Something went wrong. Please try again later.')
-					consoloe.log(err)
+					console.log(err)
 				});
 		};
 	}

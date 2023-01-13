@@ -48,7 +48,7 @@ class App extends Component {
 			      <div className="Audio-items">
 			        <div className="toggle_button">
   	            <input id="toggle" className="toggle_input" type='checkbox' onChange={this.handleChange}/>
-  	            <label for="toggle" className="toggle_label"/>
+  	            <label htmlFor="toggle" className="toggle_label"/>
   	          </div>
 			        <div className="Audio-1">Turn on/off background music</div>
 			      </div>
