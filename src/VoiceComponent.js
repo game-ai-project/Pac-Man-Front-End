@@ -36,11 +36,13 @@ class VoiceComponent extends Component {
 				}),
 			})
 				.then((res) => {
-					//TODO: Do something with this result, for example, let user know that they send the voice successfully to the server
-					console.log(res.json());
+				})
+				.then(data => {
+					alert(`Your message "${text}" was successfully records.`)
+					console.log(data)
 				})
 				.catch((err) => {
-					//TODO: In case some error happens, let the user know!
+					alert('Something went wrong. Please try again later.')
 				});
 		};
 	}
