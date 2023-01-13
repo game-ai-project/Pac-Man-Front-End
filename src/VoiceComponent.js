@@ -43,6 +43,7 @@ class VoiceComponent extends Component {
 				})
 				.catch((err) => {
 					alert('Something went wrong. Please try again later.')
+					consoloe.log(err)
 				});
 		};
 	}
