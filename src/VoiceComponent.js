@@ -2,7 +2,11 @@ import './App.css';
 
 import { useEffect, useState } from 'react';
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
 const ENDPOINT_URL = 'https://20.194.195.200:8000/sentiment';
+const MySwal = withReactContent(Swal);
 
 const VoiceButton = ({ lang = 'en-US' }) => {
 	const [isListening, setIsListening] = useState(false);
@@ -34,10 +38,18 @@ const VoiceButton = ({ lang = 'en-US' }) => {
 					}),
 				});
 				const data = await response.json();
-				alert(`Your message was successfully recorded.\nText: "${text}"`);
+				MySwal.fire({
+					title: <p>Your message was successfully recorded</p>,
+					icon: 'success',
+					html: `<p>Text: "${text}"</p>`,
+				});
 				console.log(data);
 			} catch (err) {
-				alert('Something went wrong. Please try again later.');
+				MySwal.fire({
+					title: <p>Something went wrong. Please try again later.</p>,
+					icon: 'error',
+					html: `<p>Text: "${text}"</p>`,
+				});
 				console.log(err);
 			} finally {
 				setIsProcessing(false);
@@ -58,7 +70,11 @@ const VoiceButton = ({ lang = 'en-US' }) => {
 			<button
 				disabled={isListening || isProcessing}
 				onClick={onRecognize}
-				className={isListening || isProcessing ? 'record-button disabled' : 'record-button'}
+				className={
+					isListening || isProcessing
+						? 'record-button disabled'
+						: 'record-button'
+				}
 			>
 				{isListening
 					? 'Listening...'
