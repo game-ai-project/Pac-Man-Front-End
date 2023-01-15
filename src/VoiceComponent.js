@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
-const ENDPOINT_URL = 'https://20.194.195.200:8000/sentiment';
+const ENDPOINT_URL = 'https://staciiaz.live:8000/sentiment';
 const MySwal = withReactContent(Swal);
 
 const VoiceButton = ({ lang = 'en-US' }) => {
